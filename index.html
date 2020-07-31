@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>展示前往指定元素</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <h1 id="top">頂端</h1>
+        <!-- data-gte-target 目標，data-gte-offset 位移 -->
+        <span data-gte-target="first" data-gte-offset="0">前往第一區</span>
+        <span data-gte-target="second" data-gte-offset="100">前往第二區</span>
+    </section>
+    <section>
+        <h1 id="first">第一區</h1>
+    </section>
+    <section>
+        <h1 id="second">第二區</h1>
+    </section>
+
+    <div id="back-to-top" data-gte-target="top" data-gte-offset="0"></div>
+
+    <script src="./goToElement.js"></script>
+</body>
+</html>
